@@ -7,6 +7,8 @@ use_frameworks!
 # OWS Pods
 ###
 
+pod 'LightningKit', :git => 'https://github.com/bejitono/LightningKit.git'
+
 pod 'SwiftProtobuf', "1.7.0"
 
 pod 'SignalCoreKit', git: 'https://github.com/signalapp/SignalCoreKit.git', testspecs: ["Tests"]
