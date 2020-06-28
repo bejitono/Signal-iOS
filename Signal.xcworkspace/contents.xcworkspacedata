@@ -5,6 +5,9 @@
       location = "group:Signal.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:LightningKit/LightningKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
