@@ -145,6 +145,7 @@ public class OnboardingController: NSObject {
     // MARK: -
 
     enum OnboardingMilestone {
+        case setupWallet
         case verifiedPhoneNumber
         case verifiedLinkedDevice
         case restorePin
@@ -180,6 +181,8 @@ public class OnboardingController: NSObject {
                     milestones.append(.setupPin)
                 }
             }
+            
+            milestones.append(.setupWallet)
 
             return milestones
         }
@@ -258,6 +261,8 @@ public class OnboardingController: NSObject {
             return Onboarding2FAViewController(onboardingController: self, isUsingKBS: true)
         case .setupPin:
             return buildPinSetupViewController()
+        case .setupWallet:
+            return OnboardingRecoveryPhraseViewController(onboardingController: self)
         }
     }
 
